@@ -94,7 +94,7 @@ header {
 
 .header .welcome button,
 .contact button {
-    background-color: #fff700;
+    background-color: #ffcc00;
     color: #fff;
     border: none;
     padding: 15px 32px;
@@ -235,7 +235,7 @@ header {
 .under {
     text-align: center;
     font-family: 'Alegreya', serif;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .services h2 {
@@ -261,10 +261,12 @@ header {
 .services .icon-btn:hover {
     border-radius: 12%;
     background-color: #ffcc00;
+    box-shadow: 1px 1px 2px 0px black;
 }
 
 .services .icon-btn:hover+h2 {
     color: #ffcc00;
+    text-shadow: 2px 2px 2px black;
 }
 
 /*PORTFOLIO*/
@@ -307,7 +309,7 @@ header {
 }
 
 .portfolio .col-4 {
-    padding: 30px 0px;
+    padding: 50px 0px 30px;
 }
 
 .portfolio .caption {
@@ -364,6 +366,12 @@ header {
 }
 
 /*TEAM*/
+
+
+.team [class*="col-"] {
+    padding: 0;
+}
+
 .team {
     padding: 7% 0;
     background-color: #f2f2f2;
@@ -592,34 +600,7 @@ footer .col-5 {
     right: 15px;
 }
 
-@media (max-width: 1150px) {
-
-    .about-us .right {
-        padding-right: 12%;
-        float: right;
-        padding-left: 4%;
-    }
-}
-
-
-@media (max-width: 992px) {
-
-    .about-us .right {
-        padding-right: 8%;
-        float: right;
-        padding-left: 7%;
-    }
-
-    .contact input,
-    textarea {
-        width: 370px;
-    }
-
-    .team img {
-        padding: 35px;
-        width: 265px;
-        height: 265px;
-    }
+@media (max-width: 1400px) {
 
     .col-m-1 {
         width: 8.33%;
@@ -716,6 +697,38 @@ footer .col-5 {
     .col-m-offset-11 {
         margin-left: 91.66%;
     }
+}
+
+
+@media (max-width: 1150px) {
+
+    .about-us .right {
+        padding-right: 12%;
+        float: right;
+        padding-left: 4%;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .about-us .right {
+        padding-right: 8%;
+        float: right;
+        padding-left: 7%;
+    }
+
+    .contact input,
+    textarea {
+        width: 370px;
+    }
+
+    .team img {
+        padding: 35px;
+        width: 265px;
+        height: 265px;
+    }
+
 }
 
 
@@ -839,7 +852,7 @@ footer .col-5 {
     /*header*/
     header {
         background-position: center;
-        height: 74vh;
+        height: 88vh;
     }
 
     .header nav ul {
@@ -865,24 +878,23 @@ footer .col-5 {
     }
 
     .header .welcome h1 {
-        margin: 5px 0px;
-        font-size: 22px;
+        margin: 5px 0 30px;
+        font-size: 23px;
     }
 
     .header .welcome h2 {
-        margin: 5px 0px;
-        font-size: 28px;
+        margin: 5px 0 25px;
+        font-size: 30px;
     }
 
     .header .welcome button {
-        margin: 5px 2px;
-        padding: 8px 20px;
-        font-size: 14px;
+        padding: 14px 25px;
+        font-size: 15px;
     }
 
     /*services*/
     .services {
-        margin: 5% auto;
+        margin: 15% auto;
     }
 
     .services h1 {
@@ -897,16 +909,28 @@ footer .col-5 {
 
     /*portfolio*/
     .portfolio {
-        padding: 5% 10%;
+        padding: 20% 5% 15%;
     }
 
     .portfolio h1 {
         font-size: 30px;
     }
 
+    .portfolio .col-4 {
+        padding: 50px 0;
+    }
+
     /*about-us*/
     .about-us {
-        padding: 5% 0;
+        padding: 20% 5% 15%;
+    }
+
+    .about-us .row {
+        padding: 35px 0;
+    }
+
+    .about-us .image {
+        padding-top: 15px;
     }
 
     .about-us h1 {
@@ -924,10 +948,9 @@ footer .col-5 {
     }
 
 
-
     /*TEAM*/
     .team {
-        padding: 5%;
+        padding: 15% 5%;
         background-color: #f2f2f2;
         text-align: center;
     }
@@ -937,7 +960,7 @@ footer .col-5 {
     }
 
     .team .text {
-        margin: 20px 0;
+        margin: 25px 20px;
     }
 
     .team img {
@@ -948,9 +971,12 @@ footer .col-5 {
         float: none;
     }
 
+    .company .col-3 {
+        padding: 10% 0;
+    }
+
     .contact {
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding: 10% 0;
     }
 
     .contact h1 {
@@ -959,7 +985,15 @@ footer .col-5 {
 
     .contact input,
     textarea {
-        width: 100%;
+        width: 90%;
+    }
+
+    .contact .form-group {
+        text-align: center;
+    }
+
+    .contact .col-6:nth-of-type(2) {
+        text-align: center;
     }
 
     .contact .button-send {
@@ -976,8 +1010,18 @@ footer .col-5 {
         cursor: none;
     }
 
+    footer p {
+        padding-top: 10px;
+    }
+
+    .author {
+        justify-content: center;
+        height: 50px !important;
+    }
+
     .social-media {
         text-align: center;
+        padding-top: 20px;
     }
 
     .mobile-menu {
@@ -988,9 +1032,5 @@ footer .col-5 {
 
     .header ul {
         display: none;
-    }
-
-    #mobile-menu-btn:checked+ul {
-        display: block;
     }
 }
